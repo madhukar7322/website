@@ -1,0 +1,26 @@
+{
+   "background": {
+      "scripts": [ "event.js" ]
+   },
+   "browser_action": {
+      "default_icon": "assets/icon128.png",
+      "default_popup": "popup.html",
+      "default_title": "Native MPEG-Dash + HLS Playback"
+   },
+   "content_security_policy": "script-src 'self' https://cdn.jsdelivr.net blob:; object-src 'self'",
+   "description": "Allow the browser to play HLS (m3u8) or MPEG-Dash (mpd) video urls 'natively'",
+   "icons": {
+      "128": "assets/icon128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArh8k9RJQYcB7KfmMO5AQpI3DdCQPLGL9DzWHNiN81ivLCGBnAINd+tjmvo/FM7bs2dVuR+vDafx6VkO8yEAXlImM3stHFSG5bvn0G5Fei+sltSyZwXGYy2aK7EGL9K0BZMY9Dx5EVY3SoujhE+7vMBIDJondAoqh83U00+bcqJiWwbCr3diBiM39LcLsIWmtoBhWIR11GewlLl5XnYDdUmb4QQoIMhFrZVw5odlasNpNGKouzsT/pz8qe8ZRdaFrPMu4P1hyACC2uR81DuC/A/8PgalFW1GYNojUk/tR/PhCZexhRM5FC4zpIeLxqwyUL/y5CEfrcxtCddyvFv+U8wIDAQAB",
+   "manifest_version": 2,
+   "name": "Native MPEG-Dash + HLS Playback",
+   "options_ui": {
+      "chrome_style": true,
+      "page": "options.html"
+   },
+   "permissions": [ "tabs", "*://*/*.m3u8*", "*://*/*.mpd*", "*://*/*/Manifest*", "webRequest", "webRequestBlocking", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "4.0.0",
+   "web_accessible_resources": [ "popup.js", "controls.html", "hls_tech.js", "index.html", "options.html", "style.css", "index.js", "native-adaptive-streaming.chrome-v4.0.0.zip", "dropdown.js", "globals.js", "controls.js", "la_url_form.html", "settings_form.html", "qparam_parser.js", "event.js", "dash_tech.js", "smooth_tech.js", "range.js", "ui_mapping.js", "player.js", "subtitles_url_form.html", "options.js", "media_url_form.html", "headers_form.html", "ajax.js", "popup.html", "state_machine.js", "manifest.json", "head.html", "assets/icon128.svg", "assets/loader.svg", "assets/bitcoin_address.png", "assets/icon128grey.png", "assets/monero_address.png", "assets/icon128.png", "libs/hls.min.js", "libs/dash.all.min.js", "libs/material_icons.css", "libs/animate.min.css", "libs/hasplayer.min.js", "libs/material_icons.ttf" ]
+}
